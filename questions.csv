@@ -1,0 +1,94 @@
+Subject,Question,Option 1,Option 2,Option 3,Option 4,Correct Answer
+DSA,What is a linked list?,A type of array,A data structure consisting of nodes,A function,A class,A data structure consisting of nodes
+DSA,What is the time complexity of binary search?,O(n),O(log n),O(n log n),O(1),O(log n)
+DSA,What is the purpose of a stack?,To store data in a queue,To store data in a tree,To store data in a Last-In-First-Out (LIFO) order,To store data in a First-In-First-Out (FIFO) order,To store data in a Last-In-First-Out (LIFO) order
+DSA,What is the difference between a queue and a stack?,A queue is a LIFO data structure, a stack is a FIFO data structure,A queue is a FIFO data structure, a stack is a LIFO data structure,A queue is a tree data structure, a stack is a graph data structure,A queue is a graph data structure, a stack is a tree data structure,A queue is a FIFO data structure, a stack is a LIFO data structure
+DSA,What is the time complexity of a bubble sort algorithm?,O(n),O(n log n),O(n^2),O(2^n),O(n ^2)
+DSA,What is the purpose of a hash table?,To store data in a sorted order,To store data in a random order,To store data in a key-value pair,To store data in a tree structure,To store data in a key-value pair
+DSA,What is the time complexity of a depth-first search (DFS) algorithm?,O(n),O(n log n),O(n^2),O(2^n),O(n + m)
+DSA,What is the purpose of a heap data structure?,To store data in a sorted order,To store data in a random order,To store data in a priority queue,To store data in a tree structure,To store data in a priority queue
+DSA,What is the time complexity of a merge sort algorithm?,O(n),O(n log n),O(n^2),O(2^n),O(n log n)
+DSA,What is the purpose of a graph data structure?,To store data in a tree structure,To store data in a random order,To store data in a network of nodes and edges,To store data in a key-value pair,To store data in a network of nodes and edges
+DSA,What is the time complexity of a quicksort algorithm?,O(n),O(n log n),O(n^2),O(2^n),O(n log n)
+DSA,What is dynamic programming?,A technique to solve problems by combining solutions of subproblems,A method of sorting data,A way to manage memory,An algorithm for searching in graphs,A technique to solve problems by combining solutions of subproblems
+DSA,What is a binary heap?,A complete binary tree that satisfies the heap property,A linear data structure,A non-linear data structure,A type of graph,A complete binary tree that satisfies the heap property
+DSA,What is the main difference between BFS and DFS?,BFS uses a stack, DFS uses a queue,BFS uses a queue, DFS uses a stack,Both use the same data structure,BFS is for unweighted graphs only,BFS uses a queue, DFS uses a stack
+DSA,What is the worst-case time complexity of an insertion sort?,O(n),O(n log n),O(n^2),O(2^n),O(n^2)
+DSA,What does a trie data structure store?,Only strings,Only integers,Key-value pairs,Graphs,Only strings
+DSA,What is the time complexity of accessing an element in a hash table?,O(n),O(log n),O(1),O(n log n),O(1)
+DSA,What is a graph?,A collection of nodes and edges,A type of array,A type of tree,An algorithm,A collection of nodes and edges
+DSA,What is the purpose of a priority queue?,To store data in random order,To allow access to the highest (or lowest) priority element first,To sort data,To store data in a tree structure,To allow access to the highest (or lowest) priority element first
+DSA,What is the time complexity of finding the height of a binary tree?,O(n),O(log n),O(n^2),O(1),O(n)
+DSA,What is backtracking?,A method for exploring all possible solutions,An algorithm for sorting,A type of dynamic programming,A method for searching in trees,A method for exploring all possible solutions
+DSA,What is the time complexity of a linear search?,O(n),O(log n),O(n log n),O(1),O(n)
+DSA,What does Big O notation represent?,The upper bound of the algorithm's time complexity,A fixed time for an algorithm,The exact time an algorithm takes,The lower bound of the algorithm's time complexity,The upper bound of the algorithm's time complexity
+DSA,What is the difference between a directed and an undirected graph?,A directed graph has edges with direction, while an undirected graph does not,Both are the same, but one is weighted,A directed graph is always cyclic, while an undirected graph is not,A directed graph has only one vertex, while an undirected graph has multiple vertices,A directed graph has edges with direction, while an undirected graph does not
+DSA,What is a red-black tree?,A balanced binary search tree with specific properties,An unbalanced binary tree,An array-based tree,Another name for a binary search tree,A balanced binary search tree with specific properties
+DSA,What is the time complexity of the Floyd-Warshall algorithm?,O(n),O(n^2),O(n^3),O(log n),O(n^3)
+DSA,What is an array?,A collection of items stored at contiguous memory locations,A type of tree,A type of queue,An unordered list,A collection of items stored at contiguous memory locations
+DSA,What does a stack follow?,First-In-First-Out (FIFO),Last-In-First-Out (LIFO),Random order,Priority order,Last-In-First-Out (LIFO)
+DSA,What is a queue?,A linear data structure that follows FIFO order,A non-linear data structure,A type of tree,A sorting algorithm,A linear data structure that follows FIFO order
+DSA,What is a tree?,A hierarchical data structure,An unordered list,A linear data structure,An array,A hierarchical data structure
+DSA,What is the main use of a linked list?,Dynamic memory allocation,Static memory allocation,To store data in a sorted order,To sort data,Dynamic memory allocation
+DSA,What is a node in a linked list?,An individual element of the list,The entire list,The first element,The last element,An individual element of the list
+DSA,What is the depth of a tree?,The number of edges from the root to the deepest leaf node,The number of nodes in the tree,The height of the tree,The number of children of a node,The number of edges from the root to the deepest leaf node
+DSA,What does the term "searching" refer to in data structures?,Finding an item in a data structure,Storing an item,Sorting items,Deleting an item,Finding an item in a data structure
+DSA,What is a hash function?,A function that converts input into a fixed-size value,An encryption algorithm,An algorithm for sorting,An algorithm for searching,A function that converts input into a fixed-size value
+DSA,What is a binary tree?,A tree in which each node has at most two children,A tree with no nodes,A tree with multiple roots,A tree with only one child per node,A tree in which each node has at most two children
+DSA,What is the height of a tree?,The number of edges on the longest path from the root to a leaf node,The number of nodes in the tree,The depth of the tree,The number of children of the root,The number of edges on the longest path from the root to a leaf node
+DSA,What is sorting?,Arranging items in a specific order,Finding an item in a list,Removing an item from a list,Storing items,Arranging items in a specific order
+DSA,What is an example of a linear data structure?,Array,Graph,Tree,Hash table,Array
+DSA,What is a graph?,A collection of nodes connected by edges,An array,A type of list,A type of queue,A collection of nodes connected by edges
+DSA,What does a binary search require?,A sorted array,An unsorted array,A linked list,A tree, A sorted array
+Python,What is the output of print(2 ** 3)?,8,6,9,4,8
+Python,Which of the following is a mutable data type in Python?,List,Tuple,Set,String,List
+Python,What keyword is used to define a function in Python?,define,function,def,fun,def
+Python,What is the correct extension of the Python file?,.py,.python,.pyt,.pt,.py
+Python,Which of the following statements is used to create a variable in Python?,var x = 10,x := 10,x = 10,x -> 10,x = 10
+Python,How do you start a comment in Python?,//,#,/*,<!--,#
+Python,Which function is used to read data from a file in Python?,read(),input(),get(),fetch(),read()
+Python,What will be the output of the following code: print(type([]))?,"<class 'list'>",<class 'dict'>,<class 'set'>,<class 'tuple'>,<class 'list'>
+Python,What is the output of print("Hello"[1:4])?,"Hel","ell","llo","lo","ell"
+Python,Which of the following is not a keyword in Python?,if,while,for,loop,loop
+Python,What is the output of print(10 // 3)?,3,3.33,3.0,3.5,3
+Python,Which of the following methods can be used to convert a string to an integer in Python?,str(),int(),float(),convert(),int()
+Python,What symbol is used for comments in Python?,#,//,/*,<!--,#
+Python,Which of the following data types is immutable in Python?,List,Set,Tuple,Dictionary,Tuple
+Python,What is the output of print(len("Python"))?,6,7,8,5,6
+Python,Which operator is used for exponentiation in Python?,**,^,%,//,**
+Python,How do you create a list in Python?,list = {},list = [],list = (),list = <>,list = []
+Python,Which of the following will raise an error in Python?,1 + "1",1 + 1,"1" + "1",1 + 0,1 + "1"
+Python,What is the method to add an element to the end of a list?,append(),add(),insert(),extend(),append()
+Python,Which of the following is a Python built-in function?,print(),display(),show(),render(),print()
+Python,What will be the output of print(type({}))?,"<class 'dict'>","<class 'list'>","<class 'set'>","<class 'tuple'>","<class 'dict'>"
+Python,What is the correct way to declare a string variable in Python?,str_var = "Hello",str_var = 'Hello',str_var = Hello,str_var = (Hello),str_var = "Hello"
+Python,What does the 'break' statement do in a loop?,Exits the loop,Continues to the next iteration,Stops the program,Returns a value,Exits the loop
+Python,What is the output of print(5 == 5)?,True,False,None,Error,True
+Python,Which of the following is used to handle exceptions in Python?,try/catch,try/except,catch/throw,handle/error,try/except
+Python,How do you create a function in Python?,function myFunc():,def myFunc():,create myFunc():,myFunc() = def:,def myFunc():
+Python,Which of the following statements will create a dictionary?,myDict = {},myDict = [],myDict = (),myDict = "",myDict = {}
+Python,What is the output of print("Python" * 2)?,PythonPython,Python 2,Python * 2,Error,PythonPython
+Python,What is the result of 2 + 3 * 5?,25,17,15,10,17
+Python,Which of the following methods can be used to remove an item from a list?,delete(),remove(),discard(),pop(),remove()
+Python,What is the output of print("A" in "Apple")?,True,False,None,Error,True
+Python,How can you swap two variables a and b in Python?,a,b = b,a,a = b,b = a,a,b = a,b,b,a,b = b,a
+Python,What will be the output of print(bool(0))?,True,False,None,Error,False
+Python,Which function is used to get the length of a string?,length(),len(),size(),count(),len()
+Python,What is the output of print(3 * 'abc')?,"abcabcabc",abc,3,"abc 3","abcabcabc"
+Python,What is the default return value of a function in Python if no return statement is provided?,None,0,False,Null,None
+Python,Which of the following can be used to iterate over a list?,for loop,while loop,do-while loop,all of the above,all of the above
+Python,What is the output of print("Hello" + " World")?,"Hello World",HelloWorld,"Hello" " World",Error,"Hello World"
+Python,What is the purpose of the `pass` statement in Python?,To terminate a loop,To define a function,To create an empty code block,To raise an exception,To create an empty code block
+Python,What does PEP 8 refer to?,Python Error Handling,Python Enhancement Proposal for style guide,Python Execution Protocol,Python Environment Package,Python Enhancement Proposal for style guide
+Python,What is the main difference between a list and a tuple?,Lists are immutable, Tuples are mutable,Tuples are immutable, Lists are mutable,They are the same,Tuples are immutable, Lists are mutable
+Python,What does the `__init__` method do in a class?,Defines class attributes,Initializes class instances,Defines methods,Creates the class,Initializes class instances
+Python,What is the purpose of the `self` keyword in Python?,To refer to the class itself,To refer to the instance of the class,To refer to the parent class,To create static methods,To refer to the instance of the class
+Python,What type of language is Python considered?,Compiled language,Interpreted language,Machine language,Low-level language,Interpreted language
+Python,Which of the following is not a core data type in Python?,Lists,Tuples,Classes,Sets,Classes
+Python,What is a lambda function in Python?,A type of list,A small anonymous function,A function that raises exceptions,A built-in Python function,A small anonymous function
+Python,What does the `len()` function do in Python?,Counts the number of characters in a string,Returns the length of an iterable,Checks if an iterable is empty,Returns the last element of an iterable,Returns the length of an iterable
+Python,What is the purpose of the `with` statement in Python?,To create a loop,To manage resources efficiently,To define functions,To raise exceptions,To manage resources efficiently
+Python,What are Python decorators used for?,To create classes,To modify functions or methods,To handle exceptions,To create modules,To modify functions or methods
+Python,What is the difference between `==` and `is` in Python?,`==` compares values, `is` compares identities,They are the same,`is` compares values, `==` compares identities,`==` compares identities, `is` compares values
+Python,What is the purpose of the `yield` keyword in Python?,To return a value from a function,To create a generator function,To define a function,To raise an exception,To create a generator function
+Python,What is the use of `__str__()` method in a class?,To define the string representation of an object,To initialize the class,To create a constructor,To define the length of an object,To define the string representation of an object
