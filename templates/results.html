@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #007BFF;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .question-list {
+            padding: 0;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .question-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+        }
+
+        .question-number {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .option-list {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .option {
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .download-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .download-links a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .download-links a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <div class="container">
+        <div id="quiz-results" class="question-list"></div>
+
+        <label>
+            <input type="checkbox" id="include-answers">
+            Include Correct Answers
+        </label>
+
+        <div class="download-links">
+            <p>Download quiz in:</p>
+            <a href="#" id="download-word"><i class="fas fa-file-word"></i> Word</a>
+            <a href="#" id="download-pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a href="#" id="download-json"><i class="fas fa-file-code"></i> JSON</a>
+        </div>
+    </div>
+
+    <script>
+        const quizResults = document.getElementById('quiz-results');
+        const questions = {{ questions | tojson }};
+        const includeAnswersCheckbox = document.getElementById('include-answers');
+        const downloadWordLink = document.getElementById('download-word');
+        const downloadPdfLink = document.getElementById('download-pdf');
+        const downloadJsonLink = document.getElementById('download-json');
+
+        // Display the questions and options
+        questions.forEach((question, index) => {
+            const questionHtml = `
+                <div class="question-item">
+                    <span class="question-number">${index + 1}.</span> ${question.question}
+                    <ul class="option-list">
+                        ${question.options.map((option, i) => `
+                            <li class="option">${String.fromCharCode(65 + i)}. ${option}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+            quizResults.innerHTML += questionHtml;
+        });
+
+        function updateDownloadLinks() {
+            const includeAnswers = includeAnswersCheckbox.checked ? 'True' : 'False';
+            const encodedQuestions = '{{ encoded_questions }}';
+
+            downloadWordLink.href = `/download_quiz/word?subject={{ subject }}&questions=${encodedQuestions}&include_answers=${includeAnswers}`;
+            downloadPdfLink.href = `/download_quiz/pdf?subject={{ subject }}&questions=${encodedQuestions}&include_answers=${includeAnswers}`;
+            downloadJsonLink.href = `/download_quiz/json?subject={{ subject }}&questions=${encodedQuestions}&include_answers=${includeAnswers}`;
+        }
+
+        includeAnswersCheckbox.addEventListener('change', updateDownloadLinks);
+
+        // Initial setup of download links
+        updateDownloadLinks();
+    </script>
+</body>
+</html>
